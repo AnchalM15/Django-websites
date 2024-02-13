@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Layou - Grid</title>
+    <style>
+        div {
+           box-shadow: 0 0 3px #333333; 
+           border-radius: 5px;
+           padding: 1rem;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1rem;
+        }
+        h1{
+            text-align: center;
+            margin: 10;
+        }
+        
+    #box1{
+        display: grid;
+        place-items: center;
+    }
+    #box2{
+        display: grid;
+        place-items: center;
+        background-color: yellow;
+    }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="box1">
+        <article>
+            <h1>Django</h1>
+            <button>know more</button>
+        </article>
+        </div>
+        <div >
+            <p>Quod harum eligendi saepe voluptatem ducimus nobis minus quidem ex maxime? Hic molestias repellendus eos
+                fugit corporis cupiditate fuga, voluptatibus, saepe rem, natus iusto cum molestiae iure provident nam
+                velit.</p>
+        </div>
+        <div id="box2">
+            <h2>HTML</h2>
+                <button>know more</button>
+        </div>
+        <div>
+            <p>Aliquid quas in iusto veritatis impedit earum rem, ut et enim. Dolorem eum quas blanditiis error
+                recusandae sed molestiae corporis distinctio. Deleniti, debitis non. Eum amet eius odio iure laborum?
+            </p>
+        </div>
+        <div>
+            <p>Inventore vel, velit consequatur autem sequi qui sint deleniti et voluptas eos ipsa libero repellendus
+                dignissimos provident pariatur aliquid odio, amet asperiores sapiente quasi quia? Ipsum atque error
+                veritatis consectetur?</p>
+        </div>
+        <div>
+            <p>Perferendis natus nobis, itaque, aliquam ducimus quia, quibusdam illum exercitationem maiores
+                voluptatibus ex sed earum dolore! Quisquam nemo, optio saepe assumenda quidem, quas nesciunt, corrupti
+                accusamus autem molestiae ipsum. Recusandae?</p>
+        </div>
+    </main>
+</body>
+
+</html>
