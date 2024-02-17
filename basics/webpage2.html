@@ -6,53 +6,129 @@
     <meta name="viewport" content="width=margin, initial-scale=1.0">
     <title>Practice</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        section{
-            height: 100vh; 
+
+        section {
+            height: 100vh;
             display: grid;
             place-items: center;
         }
-        .container{
+
+        .container {
             display: flex;
-            outline: 2px solid rgb(26, 25, 25);
+            justify-content: center;
+
         }
-        h1{
-            font-size: 2rem;
+
+        h1 {
+            font-size: 3rem;
             font-family: sans-serif;
             text-align: center;
         }
-        h1 > span{
+
+        h1>span {
             font-weight: lighter;
+        }
+
+        #s1 {
+            background-image: url(back.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .leftcol{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        .leftcol div:nth-child(1) {
+                    display: flex;
+                    gap: 1rem;
+        }
+        .leftcol a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .leftcol img{
+            border-radius: 17%;
+            border: 20px solid white;
+        }
+
+        .cta{
+            font-size: 1.5rem !important;
+            padding: .4rem 2rem;
+            color: blue !important;
+            background-color: white;
+            border-radius: 5rem;
+
+        }
+
+        .intro {
+           display: flex;
+           flex-direction: column;
+           background-color: rgb(174, 174, 174);
+           gap: 2rem;
+           padding: 10rem 3rem;
+           width: 40%;
+        }
+        .intro p{
+            font-size: 2rem;
+            color: rgb(red, green, blue);
+        }
+        .owners{
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .owners .i1{
+            align-self: flex-start;
+            border-radius: 3rem;
+        }
+        .owners .i2{
+            align-self: flex-end;
+            border-radius: 3rem;
+        }
+        .c2{
+            gap: 3rem;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <section>
+        <section id="s1">
             <div class="container">
                 <div class="leftcol">
-                    <img src="logo.png.jpg" alt="logo" height="64" width="64">
-                    <a href="#">Zimcore Hubs</a>
-                </div>
-                <h1>
-                    <span>Changing the world</span><br> one app at a time
-                </h1>
                 <div>
-                    <a class="cta" href="#"> Learn more</a>
+                    <img src="logo.png.jpg" alt="logo" height="64" width="64">
+                    <a href="#">Zimcore <br>Hubs</a>
+                </div>
+                    <h1>
+                       
+                        <span>Changing the world</span><br> one app at a time
+                    
+                    </h1>
+                    <div>
+                        <a class="cta" href="#"> Learn more</a>
+                    </div>
                 </div>
                 <div class="rightcol">
-                    <img src="png.goku.jpg" alt="goku" height="70%" width="70%">
+                    <img src="png.goku.jpg" alt="goku" width="70%">
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="leftcol">
+                <div class="intro">
                     <div>
                         <h2>Our Company Story</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae amet odit? Iste
@@ -60,18 +136,18 @@
                             nulla alias autem minus blanditiis maiores!</p>
                     </div>
                 </div>
-                <div class="rightcol">
+             <div class="owners">
 
-                    <img src="w.png.jpg" alt="naruto" height="400">
-                    <img src="Wha.png.jpg" alt="tobi" height="400">
+                <img class="i1" src="w.png.jpg" alt="naruto" height="400">
+                <img class="i2" src="Wha.png.jpg" alt="tobi" height="400">
 
-                </div>
             </div>
+
         </section>
         <section>
             <div class="card">
                 <h2>Our services</h2>
-                <div class= services>
+                <div class=services>
                     <div class="card">
                         <img src="logo.png.jpg" alt="" height="80">
                         <h3>App Consultancy</h3>
@@ -79,18 +155,18 @@
                     </div>
                 </div>
             </div>
-         </div>
-         <div class="card">
-            <img src="logo.png.jpg" alt="" height="80">
-            <h3>App Consultancy</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique.</p>
-         </div>
-         <div class="card">
-            <img src="logo.png.jpg" alt="" height="80">
-            <h3>App Consultancy</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nemo!</p>
+            </div>
+            <div class="card">
+                <img src="logo.png.jpg" alt="" height="80">
+                <h3>App Consultancy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique.</p>
+            </div>
+            <div class="card">
+                <img src="logo.png.jpg" alt="" height="80">
+                <h3>App Consultancy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nemo!</p>
 
-         </div>
+            </div>
         </section>
         <section></section>
         <section></section>
