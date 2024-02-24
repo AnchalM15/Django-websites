@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .boxes {
+        width: 200px;
+        height: 200px;
+        background-color: #b6b6b6;
+        display: grid;
+        place-items: center;
+        font-size:1. 2rem;
+        font-family: system-ui;
+        padding: 1rem;
+    }
+    .efx1{
+        color: red;
+        background-color: #fff00f ;
+        font-weight: bolder;
+        transition: 300ms ease-in-out;
+    }
+    .efx1:hover{
+        color: white;
+        background-color: #333;
+        border-radius: 100px;
+    }
+   .efx2{
+    background-color: blue;
+    border: 1px solid #333;
+    color: white;
+    transform: rotate(45deg) scale(.75);
+    transition:300ms ease ;
+    }
+    .efx2:hover{
+        transform: rotate(0deg) translate(25px);
+        scale: 1.1;
+        opacity: .5;
+    }
+    .efx3{
+        background-color:greenyellow ;
+        animation: toandfro 2s 5 ease-in-out alternate;
+    }
+    @keyframes toandfro{
+    
+    0%{
+        opacity: .5;
+        translate: 50px;
+        scale: .5;
+    }
+    50%{
+        opacity: 1;
+        translate:100px 100px;
+        rotate: 180deg;
+        scale: 1.2;
+    }
+    100%{
+        translate: 0px;
+        scale: 1;
+        rotate: 0deg;
+        translate: -100px ;
+    }
+}
+</style>
+<body>
+    <section class="container">
+        <div class="boxes efx1">Lorem.</div>
+        <div class="boxes efx1">Dignissimos.</div>
+        <div class="boxes efx2">Blanditiis.</div>
+        <div class="boxes efx2">Necessitatibus!</div>
+        <div class="boxes efx2">Eaque.</div>
+        <div class="boxes efx3">Doloribus.</div>
+        <div class="boxes efx3">Consequuntur!</div>
+        <div class="boxes">Iste.</div>
+        <div class="boxes">Excepturi?</div>
+        <div class="boxes">Voluptatum!</div>
+    </section>
+</body>
+</html>
